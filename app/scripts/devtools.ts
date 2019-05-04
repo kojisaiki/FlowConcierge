@@ -3,4 +3,4 @@ chrome.devtools.panels.create(
     '',
     '../pages/panel.html',
     (panel) => {}
-)
+);
