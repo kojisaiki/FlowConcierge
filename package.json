@@ -54,6 +54,7 @@
     "standard": "^10.0.2",
     "ts-loader": "^2.x.x",
     "tslint": "^5.x.x",
+    "typescript": "^3.4.5",
     "vinyl-named": "1.x.x",
     "webpack": "3.x.x",
     "webpack-stream": "3.x.x",
