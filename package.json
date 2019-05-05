@@ -57,7 +57,7 @@
     "typescript": "^3.4.5",
     "vinyl-named": "1.x.x",
     "webpack": "3.x.x",
-    "webpack-stream": "3.x.x",
+    "webpack-stream": "^5.2.1",
     "yargs": "^8.x.x"
   }
 }
