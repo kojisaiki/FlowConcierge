@@ -51,7 +51,7 @@
     "gulp-util": "3.x.x",
     "gulp-zip": "^4.x.x",
     "require-dir": "0.x.x",
-    "standard": "^10.0.2",
+    "standard": "^11.0.1",
     "ts-loader": "^2.x.x",
     "tslint": "^5.x.x",
     "typescript": "^3.4.5",
