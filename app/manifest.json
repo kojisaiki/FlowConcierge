@@ -36,6 +36,7 @@
     "pageCapture",
     "proxy",
     "tabCapture",
+    "tabs",
     "webRequest",
     "webRequestBlocking"
   ]

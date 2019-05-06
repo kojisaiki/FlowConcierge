@@ -5,6 +5,7 @@ chrome.runtime.onInstalled.addListener(details => {
   console.log('previousVersion', details.previousVersion);
 });
 
+// TODO: devtoolsインスタンスはタブ数だけあるはずなので、管理方法の最適化が必要
 const ports: chrome.runtime.Port[] = [];
 chrome.runtime.onConnect.addListener(function(port) {
   if (port.name !== 'devtools') return;
@@ -28,9 +29,24 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
       (response: { isFlowEditor: boolean }) => {
         // alert('response:' + JSON.stringify(response));
         if (response && response.isFlowEditor) {
-          ports.forEach(port => port.postMessage({ msg: 'FlowEditor' }));
+          // TODO: devtools インスタンスとそのコネクションはタブの数だけあるはず。送り先を考えないと。
+          ports.forEach(port =>
+            port.postMessage({
+              msg: 'FlowEditor',
+              tabId: tabId,
+              changeInfo: changeInfo,
+              tab: tab
+            })
+          );
         } else {
-          ports.forEach(port => port.postMessage({ msg: 'not' }));
+          ports.forEach(port =>
+            port.postMessage({
+              msg: 'not',
+              tabId: tabId,
+              changeInfo: changeInfo,
+              tab: tab
+            })
+          );
         }
       }
     );
