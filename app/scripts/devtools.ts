@@ -1,6 +1,6 @@
 chrome.devtools.panels.create(
-    'Flow Concierge',
-    '',
-    '../pages/panel.html',
-    (panel) => {}
+  'Flow Concierge',
+  '',
+  '../pages/panel.html',
+  panel => {}
 );
