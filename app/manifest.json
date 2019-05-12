@@ -18,6 +18,7 @@
     {
       "matches": ["https://*.flow.microsoft.com/*"],
       "js": ["scripts/contentscript.js"],
+      "css": ["styles/content-tips.css"],
       "run_at": "document_end",
       "all_frames": false
     }
