@@ -1,9 +1,10 @@
 .tips-panel {
   background-color: azure;
+  bottom: 2em;
+  box-shadow: 0 10px 10px;
+  height: 200px;
+  left: 2em;
   position: absolute;
   width: 50%;
-  height: 200px;
-  bottom: 2em;
-  left: 2em;
-  box-shadow: 0 10px 10px;
+  z-index: 1;
 }
