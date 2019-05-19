@@ -1,4 +1,5 @@
 import { tips } from './tips';
+import { setupDragdrop } from './dragdrop';
 
 let setup: boolean = false;
 
@@ -11,6 +12,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     isFlowEditor = true;
 
     tips();
+    setupDragdrop();
   }
 
   // write some code

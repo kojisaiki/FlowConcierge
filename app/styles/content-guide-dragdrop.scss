@@ -1,7 +1,11 @@
-.msla-drop-zone,
-.msla-step-connector-vertical,
-.msla-step-connector-arrow-right,
-.msla-step-connector-arrow-left,
-.msla-step-connector-arrow-down {
-  background-color: rgba(32, 178, 170, 0.2);
+div.manage-flow-section.dragstep {
+  .msla-drop-zone,
+  .msla-step-connector-vertical,
+  .msla-step-connector-arrow-right,
+  .msla-step-connector-arrow-left,
+  .msla-step-connector-bottom-right,
+  .msla-step-connector-bottom-left,
+  .msla-step-connector-arrow-down {
+    background-color: rgba(32, 178, 170, 0.2);
+  }
 }
